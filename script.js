@@ -86,7 +86,6 @@ marca1.addEventListener('change', e => {
     datosBusqueda.marca2 = e.target.value;
     //llamo a la funcion filtrar
     filtrar();
-    console.log(datosBusqueda);
 })
 
 //para leer el option de articulo
@@ -95,7 +94,6 @@ articulo3.addEventListener('change', e =>{
     datosBusqueda.articulo2 = e.target.value;
     //llamo a la funcion filtrar
     filtrar();
-    console.log(datosBusqueda);
 })
 
 //CREO LA LISTA PARA EL CARRITO
@@ -112,8 +110,7 @@ const FuncionAgregar = {
 
             if(i == index){
                 //push sobre el carrito
-                listaCarrito.push(inventario[i]);
-                console.log(listaCarrito); 
+                listaCarrito.push(inventario[i]); 
                 alert(`SE AGREGO ${inventario[i].articulo} -- TALLE: ${inventario[i].talle}  AL PEDIDO`); 
                
             }
@@ -167,8 +164,8 @@ function mostrar( inventario ){
                             <p>TALLE: ${prod1.talle}</p>
                             <div class="productos__precio">
                             <p>$${new Intl.NumberFormat("de-DE").format(prod1.precio)}</p>
-                            <p class="cuotas" >6 cuotas sin interes de</p>
-                            <p class="cuotas"> $${new Intl.NumberFormat("de-DE").format((prod1.precio / 6).toFixed(2))}</p>
+                            <p class="cuotas" >12 cuotas sin interes de</p>
+                            <p class="cuotas"> $${new Intl.NumberFormat("de-DE").format((prod1.precio / 12).toFixed(2))}</p>
                             </div>
                             <div class="botonComprar">
                                 <p type="button" onclick="FuncionAgregar.agregarProducto(${(prod1.id) -1}), verCarritoProductos(), contador(), sumarTotal();">AÑADIR AL CARRITO</p>
@@ -198,7 +195,6 @@ function limpiarLocalStorage(){
 //funcion general para filtrar
 function filtrar(){
     const resultado = inventario.filter( filtrarmarca ).filter( filtrararticulo );
-    console.log(resultado);
     mostrar(resultado);
 }
 
@@ -239,7 +235,6 @@ function verCarritoProductos(){
     TotalPagar1 = 0;
 for(item5 of listaCarrito){
     TotalPagar1 += item5.precio;
-    console.log(TotalPagar1);
 }
 
 const verResultado = document.createElement('p');
@@ -321,7 +316,6 @@ function sumarTotal(){
 for(i=0; i<listaCarrito.length; i++){
     limpiarTotal();
     const total = i + 1 ;
-    console.log(total);
 
     const suma = document.createElement('p');
     suma.innerHTML = 

@@ -5,7 +5,6 @@ const resumenTotal = document.querySelector('.ResumenTotal');
 
 //traigo todo el array del localStorage y lo guardo en CarritoAlmacenado
 const CarritoAlmacenado = JSON.parse(localStorage.getItem('carrito')) || [];
-console.log(CarritoAlmacenado)
 
 
 //CREO LA TABLA DONDE IRA EL DETALLE DE LOS PRODUCTOS COMPRADOS

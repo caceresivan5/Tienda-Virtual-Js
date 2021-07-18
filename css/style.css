@@ -1,10 +1,9 @@
  /*Paleta de colores*/
         
  :root {
-    --ColorPrimarioTexto: #DC7633;
-    --colorSecundario: #E59866;
-    --colorBotonFormulario: #154360;
-    --colorNaranjaClaro: #FAD7A0;
+    --ColorPrimarioNegro: black;
+    --colorSecundarioRojo: red;
+    --colorVerde: green;
 }
 /*Globales*/
 
@@ -123,7 +122,7 @@ h3{
  }
  /* CONTADOR CARRITO */
  .subMenu__contador p{
-     background-color: black;
+     background-color: var(--ColorPrimarioNegro);
      border-radius: 2rem;
     font-size: 3rem;
     width: 55%;
