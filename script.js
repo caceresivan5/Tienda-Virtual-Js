@@ -134,7 +134,6 @@ const FuncionEliminar = {
                 let indice = listaCarrito.indexOf(listaCarrito[i]);
                 //ELIMINO EL PRODUCTO DEL ARRAY
                 let eliminando = listaCarrito.splice(indice, 1);
-                console.log(`eliminando ${prodLista}`);
                 //OCULTO EL PRODUCTO CON JQUERY
                 $(`.item${i}`).fadeOut();
                   
@@ -290,7 +289,7 @@ totalCarrito1.appendChild(verResultado);
 
         onclick =
         "FuncionEliminar.eliminarProducto(${i}), 
-         
+        verCarritoProductos(),
         sumarTotal(), 
         contador()" >
          </div>
@@ -339,18 +338,6 @@ function contador(){
             numero.innerHTML = `<p>${i+1}</p> `;
             contadorCarrito.appendChild(numero);
        
-    }
-    
-}
-
-function eliminarContador(){
-
-    for(i=0; i<listaCarrito.length; i++){
-        $(`contador${i}`).innerHTML = ' '; 
-
-        while($(`contador${i}`).firstChild){
-            $(`contador${i}`).removeChild($(`contador${i}`).firstChild)
-        }
     }
     
 }
