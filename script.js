@@ -290,7 +290,7 @@ totalCarrito1.appendChild(verResultado);
 
         onclick =
         "FuncionEliminar.eliminarProducto(${i}), 
-        eliminarContador(), 
+         
         sumarTotal(), 
         contador()" >
          </div>
@@ -312,18 +312,6 @@ function sincronizarStorage(){
 function sincronizarStoragePrecio(){
     localStorage.setItem('precio', JSON.stringify(listaCarrito.precio));
 }
-
-
-
-/*
-function ExtraerLocalStorage(){
-    document.addEventListener("DOMContentLoaded", ()=> {
-            listaCarrito = JSON.parse(localStorage.getItem('carrito'));
-          })
-}
-ExtraerLocalStorage();
-
-*/
 
 
 function sumarTotal(){   
