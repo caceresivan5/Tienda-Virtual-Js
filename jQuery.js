@@ -1,5 +1,4 @@
-//para modificar el DOM 
-// js Vanilla..document.getElementById("tituloProductos").style.color:"red";
+
 
 //jQuery
 //para asegurarme que se carga todo MENOS las imagenes UTILIZO ...
@@ -20,6 +19,7 @@ $(window).ready( ()=>{
   $(".derechos p").css({background:'black', color:'white', 'font-size':'1.5rem', 'text-align':'center', 'padding':'2rem'});
 
   //APPEND carga como el ultimo hijo
+  //creando las imagenes de redes sociales
 
   $(".redesSociales").append(`
        <div >
