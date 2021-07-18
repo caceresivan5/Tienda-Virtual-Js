@@ -79,9 +79,9 @@ for(item3 of CarritoAlmacenado){
            <!-- cuotas sin interes --> 
            <!--cambio a formato ingles para que se vean los puntos y comas y utilizo solo dos decimales despues de la coma--> 
 
-           <h3 >3 Cuotas de : $${new Intl.NumberFormat("de-DE").format((TotalPagar / 3).toFixed(2))} <button class="finalizarCompra1" > COMPRA</button></h3>
-           <h3 >6 Cuotas de : $${new Intl.NumberFormat("de-DE").format((TotalPagar / 6).toFixed(2))} <button class="finalizarCompra1"> COMPRA</button></h3>
-           <h3 >12 Cuotas de : $${new Intl.NumberFormat("de-DE").format((TotalPagar / 12).toFixed(2))} <button class="finalizarCompra1"> COMPRA</button></h3>
+           <h3 >3 Cuotas de : $${new Intl.NumberFormat("de-DE").format((TotalPagar / 3).toFixed(2))} <a href="compraFinalizada.html" class="finalizarCompra1" onclick = ' borrarLocalStorage2()' > COMPRAR</a></h3>
+           <h3 >6 Cuotas de : $${new Intl.NumberFormat("de-DE").format((TotalPagar / 6).toFixed(2))}  <a href="compraFinalizada.html" class="finalizarCompra1" onclick = ' borrarLocalStorage2()'> COMPRAR</a></h3>
+           <h3 >12 Cuotas de : $${new Intl.NumberFormat("de-DE").format((TotalPagar / 12).toFixed(2))}  <a href="compraFinalizada.html" class="finalizarCompra1" onclick = ' borrarLocalStorage2()'> COMPRAR</a></h3>
 
            </div>
            <!--Boton cancelar compra--> 
@@ -96,4 +96,8 @@ for(item3 of CarritoAlmacenado){
                localStorage.removeItem('carrito');
                alert('SE CANCELO LA COMPRA');
            }
+           function borrarLocalStorage2(){
+            localStorage.removeItem('carrito');
+            alert('Procesando Compra...');
+        }
        

@@ -425,9 +425,7 @@ padding: 1rem;
 .Resumen:hover{
     transform: scale(1.05);
 }
-@media(max-width: 1390px) {
-   
-}
+
 .Producto__Tabla{
     display: flex;
 }
@@ -439,16 +437,18 @@ padding: 1rem;
 }
 
 
-.finalizarCompra1{
-    background-color: black;
+.ResumenTotal a {
+    background-color: red;
     color: white;
     padding: 1rem;
+    font-size: 1.5rem;
     margin: 1rem;
     border: none;
     border-radius: 0.5rem;
+    display: inline-block;
 }
-.finalizarCompra1:hover{
-    background-color: red;
+.ResumenTotal a:hover{
+    background-color: black;
     cursor: pointer;
 }
 
@@ -494,7 +494,8 @@ padding: 1rem;
 
 .imagenGracias img{
     display: block;
-    margin: auto auto;
+    margin: 5rem auto ;
+    width: 10%;
 }
 .botonHome{
     display: block;
