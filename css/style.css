@@ -5,7 +5,6 @@
     --colorSecundario: #E59866;
     --colorBotonFormulario: #154360;
     --colorNaranjaClaro: #FAD7A0;
-    --colorFondo:#F2F3F4 ;
 }
 /*Globales*/
 
@@ -15,7 +14,6 @@ html {
     font-family: 'Lato', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Varela Round', sans-serif;
-background-color: var(--colorFondo);
 }
 
 *,
