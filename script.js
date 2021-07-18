@@ -297,11 +297,14 @@ totalCarrito1.appendChild(verResultado);
          </th>
 
         `
+        
         ;
         //LO AGREGO
         contenedorCarrito2.appendChild(verCarro);
+
            }
 }
+
 
 
 

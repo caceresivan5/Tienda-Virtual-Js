@@ -114,24 +114,24 @@ h3{
      padding: 2rem 4rem;
  }
  .subMenu td{
-     font-size: 2.5rem;
+     font-size: 2rem;
      padding: 1rem 2rem;
-     font-weight: 900;
+     font-weight: 700;
  }
  .tabla__botones{
      margin: auto auto;
  }
  /* CONTADOR CARRITO */
  .subMenu__contador p{
-     background-color: red;
+     background-color: black;
      border-radius: 2rem;
     font-size: 3rem;
-    width: 60%;
+    width: 55%;
      color: white;
      text-align: center;
      position: absolute;
-     left: 80%;
-     top: 10%;
+     left: 75%;
+     top: 15%;
  }
  
  #carrito{
