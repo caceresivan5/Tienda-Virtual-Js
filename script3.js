@@ -96,6 +96,7 @@ for(item3 of CarritoAlmacenado){
                localStorage.removeItem('carrito');
                alert('SE CANCELO LA COMPRA');
            }
+           //funcion que me permite borrar todo el localStorage
            function borrarLocalStorage2(){
             localStorage.removeItem('carrito');
             alert('Procesando Compra...');
