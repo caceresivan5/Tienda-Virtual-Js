@@ -396,6 +396,7 @@ padding: 1rem;
     background-color: black;
 }
 
+
 .tablaCompra{
     margin: auto auto;
 }
@@ -405,8 +406,8 @@ padding: 1rem;
 }
 
 .Resumen{
-    width: 25%;
-    height: 60%;
+    width: 35%;
+        height: 40%;
     margin: 0 auto;
     border: 1px solid black;
     border-radius: 0.5rem;
@@ -418,6 +419,9 @@ padding: 1rem;
 }
 .Resumen:hover{
     transform: scale(1.05);
+}
+@media(max-width: 1390px) {
+   
 }
 .Producto__Tabla{
     display: flex;
