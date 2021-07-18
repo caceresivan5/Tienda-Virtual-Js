@@ -235,8 +235,8 @@ function verCarritoProductos(){
     limpiarHTML2();
     limpiarTotalPrecio();
 
+    //itero y creo el contador para sumar todos los precios de los productos del carrito
     TotalPagar1 = 0;
-
 for(item5 of listaCarrito){
     TotalPagar1 += item5.precio;
     console.log(TotalPagar1);
@@ -245,13 +245,12 @@ for(item5 of listaCarrito){
 const verResultado = document.createElement('p');
 verResultado.innerHTML = 
 `
-<p> Subtotal: $${TotalPagar1} </p>
-
+<p> Subtotal: $${new Intl.NumberFormat("de-DE").format(TotalPagar1)} </p>
 
 `
 ;
 totalCarrito1.appendChild(verResultado);
-
+//itero y creo el carrito 
     for( i=0; i<listaCarrito.length; i++){
         const verCarro = document.createElement('tr');
         verCarro.classList.add(`item${i}`);
@@ -288,10 +287,12 @@ totalCarrito1.appendChild(verResultado);
         <img src="img/botonMenos.png"  
 
         onclick =
-        "FuncionEliminar.eliminarProducto(${i}), 
-        verCarritoProductos(),
+        
+        "
+        FuncionEliminar.eliminarProducto(${i}),
+        verCarritoProductos(),  
         sumarTotal(), 
-        contador()" >
+        contador() ">
          </div>
          </th>
 

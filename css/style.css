@@ -140,14 +140,19 @@ h3{
     border: 1px solid black;
     margin: 0rem 1rem;
  }
+ .contadorCarritoCompras{
+     display: flex;
+     justify-content: space-evenly;
+     margin: 2rem;
+ }
  .continuarCompra {
-    left: 36.5%;
+    left: 38.5%;
     bottom: 2rem;
     position: relative;
      text-decoration: none;
      color: white;
-     font-size: 2rem;
-     padding: 1rem;
+     font-size: 1.7rem;
+     padding: 1.5rem;
      background-color: green;
      border-radius: 1rem;
      
